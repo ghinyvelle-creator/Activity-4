@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+main{
+    width: 9cm;
+    height: 4.5cm;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    align-items: center;
+    border: 1px solid black;
+}
+.front-box {
+    width: 336px;
+    height: 192px;
+    background-color: white;
+    border: 2px thin #999;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:0px 10px 15px -3px rgba(0, 0, 0, 0.3) ;
+}
+.front-box img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+.businesscards {
+    display: flex;
+    gap: 20px;
+}
+.back-box {
+    width: 336px;
+    height: 192px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTACT INFORMATION */
+.left-section {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(8px, 5px);
+}
+
+.left-section h3 {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.left-section p {
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-section li {
+    font-size: 9px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.left-section li i {
+    width: 15px;
+    margin-right: 4px;
+    font-size: 10px;
+}
+
+/* QR CODE */
+.right-section {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Move QR slightly left and slightly down */
+    transform: translate(0px, 3px);
+}
+
+.right-section img {
+    width: 115px;
+    height: 115px;
+    object-fit: contain;
+}
+.right-section a {
+    cursor: pointer;
+    display: block;
+}
+.right-section a:hover img {
+    opacity: 0.85;
+}
